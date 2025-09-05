@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Nise Sega Sonic";
+    src: url('./fonts/NiseSegaSonic.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Pragmatica";
+    src: url('./fonts/Pragmatica.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #19159c;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  font-size: 20px;
+  text-align: center;
+  color: #050f67;
+  font-family: "Pragmatica", Tahoma, serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+h1, h2, h3 {
+  color: #050f67;
+  font-family: "Nise Sega Sonic", "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin: 40px auto;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.badge {
+  background: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.question-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.question-card h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.answers-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 2rem;
+}
+
+.answer-card {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-card:hover {
+  transform: scale(1.05);
+  background: white;
+}
+
+.answer-card.revealed {
+  background: white;
+  border-color: #19159c;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.answer-content {
+  width: 100%;
+}
+
+.question-mark {
+  font-family: "Nise Sega Sonic", "Times New Roman", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: rgb(207, 1, 1);
+}
+
+.checkmark {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: rgb(221, 188, 0);
+}
+
+.ring {
+  width: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.answer-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.next-btn,
+.restart-btn {
+  background: #19159c;
+  font-family: "Pragmatica", Tahoma, serif;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.next-btn:hover,
+.restart-btn:hover {
+  background: #2924c2;
+    transform: scale(1.05);
+}
+
+.completion-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.completion-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.completion-card h2 {
+  font-size: 2rem;
+  color: #19159c;
+  margin-bottom: 1rem;
+}
+
+.completion-card p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}

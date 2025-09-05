@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Eugenios dicen</title>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="IMG/favicon.png" sizes="32x32" />
+  </head>
+  <body>
+
+    <main class="container">
+<h1>100 %ugenios dicen</h1>
+        <p class="badge" id="questionBadge">Pregunta 1 de 4</p>
+
+        <!-- Game Screen -->
+        <div id="gameScreen">
+            <!-- Question Card -->
+            <div class="question-card">
+                <h2 id="questionText">Si Euge pudiera tener un superpoder, cual eligiria?</h2>
+            </div>
+
+            <!-- Answer Cards -->
+            <div class="answers-grid" id="answersGrid">
+                <div class="answer-card hidden" data-index="0">
+                    <div class="answer-content">
+                        <div class="question-mark">?</div>
+                        <p>👀</p>
+                    </div>
+                </div>
+                <div class="answer-card hidden" data-index="1">
+                    <div class="answer-content">
+                        <div class="question-mark">?</div>
+                        <p>👀</p>
+                    </div>
+                </div>
+                <div class="answer-card hidden" data-index="2">
+                    <div class="answer-content">
+                        <div class="question-mark">?</div>
+                        <p>👀</p>
+                    </div>
+                </div>
+            </div>
+
+            
+                <button id="nextButton" class="next-btn">Pregunta siguiente</button>
+            </div>
+        </div>
+
+        <!-- Completion Screen -->
+        <div id="completionScreen" class="completion-screen hidden">
+            <div class="completion-card">
+                <h2>🎉 ¡Felicidades!</h2>
+                <p>El juego terminó.</p>
+                <button id="restartButton" class="restart-btn">Jugar otra vez</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <p className="copyright">
+        © 2025
+        <a href="https://lechatapaillettes.vercel.app/" target="_blank"
+          >LeChatàPaillettes</a
+        >
+        • Todos los derechos reservados
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>
