@@ -2,10 +2,6 @@
     font-family: "Nise Sega Sonic";
     src: url('./fonts/NiseSegaSonic.ttf') format('truetype');
 }
-@font-face {
-    font-family: "Pragmatica";
-    src: url('./fonts/Pragmatica.ttf') format('truetype');
-}
 
 * {
   margin: 0;
@@ -28,7 +24,7 @@ body {
   font-size: 20px;
   text-align: center;
   color: #050f67;
-  font-family: "Pragmatica", Tahoma, serif;
+  font-family: Tahoma, serif;
 }
 
 .container {
@@ -148,7 +144,7 @@ h2 {
 .next-btn,
 .restart-btn {
   background: #19159c;
-  font-family: "Pragmatica", Tahoma, serif;
+  font-family: Tahoma, serif;
   color: #fff;
   border: none;
   padding: 0.75rem 2rem;
